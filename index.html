@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电瓶车信息</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            padding: 20px;
+            max-width: 500px;
+            width: 100%;
+        }
+        .plate {
+            font-size: 36px;
+            color: #007bff;
+            margin: 20px 0;
+            padding: 20px;
+            border: 4px solid #add8e6;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        .plate-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        button {
+            background-color: transparent;
+            color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        button:hover {
+            background-color: #f0f0f0;
+        }
+        .info-container {
+            background-color: #fafafa; /* 更淡的灰白色背景 */
+            padding: 20px; /* 内边距 */
+            border-radius: 10px; /* 圆角 */
+            margin-top: 20px; /* 上边距 */
+            margin-bottom: 20px; /* 下边距 */
+            text-align: left; /* 左对齐 */
+        }
+        .info {
+            margin-bottom: 25px; /* 信息之间的间距 */
+        }
+        .info p {
+            font-size: 16px;
+            color: #333333;
+            margin: 18px 0; /* 上下边距调整 */
+            font-weight: 300;
+            display: flex;
+            align-items: center; /* 垂直居中 */
+        }
+        .info span.label {
+            flex: 0 0 150px; /* 固定标签宽度 */
+            font-weight: 400;
+            color: #555555; /* 深灰色 */
+        }
+        .info span.content {
+            color: #000000; /* 黑色 */
+            font-weight: 400; /* 稍微加粗 */
+        }
+        .photos {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .photos img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .notification {
+            font-size: 22px; /* 调整字体大小 */
+            color: #333333;
+            margin-bottom: 10px; /* 标签底部边距 */
+            text-align: left; /* 左对齐 */
+            margin-left: 20px; /* 左边距 */
+        }
+        .notification-header {
+            margin-bottom: 10px; /* 下边距 */
+        }
+        .notification-space {
+            height: 200px; /* 增大下方空白区域 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="plate-container">
+            <div class="plate">AJ00396</div>
+            <button>更换车牌</button>
+        </div>
+        <div class="info-container">
+            <div class="info">
+                <p><span class="label">姓名</span><span class="content">胡泽林</span></p>
+                <p><span class="label">身份证号</span><span class="content">34010***********1514</span></p>
+                <p><span class="label">职业类型</span><span class="content">学生</span></p>
+                <p><span class="label">学院/部门</span><span class="content">建筑与规划学院</span></p>
+                <p><span class="label">专业</span><span class="content">建筑学</span></p>
+                <p><span class="label">入学年份</span><span class="content">2021</span></p>
+                <p><span class="label">学号</span><span class="content">21204020201</span></p>
+                <p><span class="label">上牌车型</span><span class="content">电动车</span></p>
+            </div>
+            <div class="photos">
+                <img src="vehicle1.jpg" alt="车辆照片1">
+                <img src="vehicle2.jpg" alt="车辆照片2">
+                <img src="vehicle3.jpg" alt="车辆照片3">
+            </div>
+        </div>
+        <div class="notification-header">
+            <div class="notification">通知记录</div>
+        </div>
+        <div class="notification-space"></div>
+    </div>
+</body>
+</html>
